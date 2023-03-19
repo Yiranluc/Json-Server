@@ -3,12 +3,6 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "lint": "cd frontend && eslint . && cd ../backend && eslint .",
-    "frontend": "cd frontend && npm run serve",
-    "postinstall": "concurrently \"cd backend && npm install\" \"cd frontend && npm install\"",
-    "deploy": "cd frontend && rm -rf dist && mkdir dist && npm run build",
-    "test": "nyc --reporter=html --reporter=text mocha",
-    "coverage": "npx nyc report --reporter=text-summary",
     "start": "node index.js",
     "dev": "nodemon index.js"
   },
